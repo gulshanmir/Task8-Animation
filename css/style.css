@@ -1,0 +1,104 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #303896;
+    overflow-x: hidden;
+}
+.cloud{
+    width: 100%;
+    opacity: 0.8;
+    position: absolute;
+    right: -100%;
+    animation: cloud 20s linear infinite;
+
+}
+@keyframes cloud{
+    from{
+        right: -100%;
+    }
+    to{
+        right: 100%;
+    }
+}
+.harry{
+    width: 15%;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    animation: harry 10s ease-in infinite;
+}
+@keyframes harry{
+    from{
+        bottom: 0;
+        right: 0;
+    }
+    to{
+        bottom: 100%;
+        right: 72%;
+    }
+}
+.sun{
+    width: 20%;
+    position: absolute;
+    top: -2%;
+    filter: grayscale(0);
+    animation:sun  9s linear 9s 1 ;
+
+}
+@keyframes sun {
+    from{
+        filter: grayscale(0);
+
+    }
+    to{
+        filter: grayscale(1);
+    }
+    
+}
+.ballon{
+    width: 10%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    animation: ballon 20s linear infinite;
+}
+@keyframes ballon {
+    0%{
+        bottom: 0;
+        left: 0;
+        transform: rotate(0);
+    }
+    75%{
+        bottom: 78%;
+        left: 85%;
+        transform: rotate(0);
+    }
+    100%{
+        bottom: 0;
+        left: 80%;
+        transform: rotate(-90deg);
+    }
+}
+.thunder{
+    position: absolute;
+    top: 0;
+    right:0;
+    opacity: 0;
+    animation: thunder 1s linear infinite;
+}
+@keyframes thunder{
+    0%{
+        opacity: 0;
+    }
+    50%{
+        opacity: 1;
+    }
+100% {
+    opacity: 0;
+}
+
+    
+}
